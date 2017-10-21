@@ -12,7 +12,7 @@ pipeline {
       steps {
         sayHello 'Awesome Student!'
       }
-    } */
+   } } */
     
    /* stage('Git Information') {
       agent any
@@ -121,7 +121,7 @@ pipeline {
         }
       }*/
     }
-  }
+  //}
   /* post {
     failure {
       emailext(
