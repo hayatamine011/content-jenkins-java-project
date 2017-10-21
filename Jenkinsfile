@@ -5,7 +5,7 @@ pipeline {
     MAJOR_VERSION = 1
   }
 
-  stages {
+  /*stages {
     stage('Say Hello') {
       agent any
 
@@ -13,7 +13,7 @@ pipeline {
         sayHello 'Awesome Student!'
       }
     }
-    /*stage('Git Information') {
+    stage('Git Information') {
       agent any
 
       steps {
