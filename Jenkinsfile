@@ -5,7 +5,7 @@ pipeline {
     MAJOR_VERSION = 1
   }
 
-  /*stages {
+  /* stages {
     stage('Say Hello') {
       agent any
 
@@ -25,7 +25,7 @@ pipeline {
           echo "My Commit: ${myLib.gitCommit("${env.WORKSPACE}/.git")}"
         }
       }
-    }*/
+    } */
     stage('Unit Tests') {
       agent {
         label 'apache'
