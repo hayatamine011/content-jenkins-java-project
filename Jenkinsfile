@@ -12,8 +12,9 @@ pipeline {
       steps {
         sayHello 'Awesome Student!'
       }
-    }
-    stage('Git Information') {
+    } */
+    
+   /* stage('Git Information') {
       agent any
 
       steps {
@@ -109,7 +110,7 @@ pipeline {
         sh "git tag rectangle-${env.MAJOR_VERSION}.${env.BUILD_NUMBER}"
         sh "git push origin rectangle-${env.MAJOR_VERSION}.${env.BUILD_NUMBER}"
       }
-      /*post {
+      /* post {
         success {
           emailext(
             subject: "${env.JOB_NAME} [${env.BUILD_NUMBER}] Development Promoted to Master",
@@ -121,7 +122,7 @@ pipeline {
       }*/
     }
   }
-  /*post {
+  /* post {
     failure {
       emailext(
         subject: "${env.JOB_NAME} [${env.BUILD_NUMBER}] Failed!",
@@ -130,5 +131,5 @@ pipeline {
         to: "brandon@linuxacademy.com"
       )
     }
-  }*/
+  } */
 }
